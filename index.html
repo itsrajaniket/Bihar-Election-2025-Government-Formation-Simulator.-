@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bihar Election 2025 - Government Formation Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Bihar Assembly Election 2025</h1>
+            <p class="subtitle">Government Formation Simulator</p>
+            <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-section">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search parties..." 
+                class="search-bar"
+                aria-label="Search parties"
+            >
+        </div>
+
+        <!-- Majority Info -->
+        <div class="majority-info">
+            <p>Majority Required: <strong>122 out of 243 seats</strong></p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+            <!-- Left: Parties List -->
+            <section class="parties-section">
+                <h2>Select Parties</h2>
+                <div id="partiesList" class="parties-list" role="region" aria-label="Parties selection">
+                    <!-- Dynamically populated -->
+                </div>
+            </section>
+
+            <!-- Right: Coalition Summary & Chart -->
+            <section class="summary-section">
+                <!-- Coalition Result -->
+                <div class="coalition-result">
+                    <h2>Coalition Status</h2>
+                    <div class="result-display">
+                        <div class="seats-display">
+                            <span class="selected-seats">0</span>
+                            <span class="seats-label">/ 243</span>
+                        </div>
+                        <div 
+                            id="resultMessage" 
+                            class="result-message" 
+                            aria-live="polite" 
+                            aria-label="Coalition result"
+                        >
+                            Select parties to form a coalition
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bar Chart -->
+                <div class="chart-section">
+                    <h3>Seat Distribution</h3>
+                    <div id="seatChart" class="seat-chart">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- Suggested Coalitions -->
+                <div class="suggestions-section">
+                    <h3>Possible Coalitions (Up to 3 Parties)</h3>
+                    <div id="suggestions" class="suggestions-list">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="actions">
+                    <button id="resetBtn" class="btn btn-reset">Reset Selection</button>
+                    <button id="exportBtn" class="btn btn-export">Export Results</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
