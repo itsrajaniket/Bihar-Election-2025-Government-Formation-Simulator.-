@@ -1,48 +1,6 @@
 ﻿# Bihar-Election-2025-Government-Formation-Simulator.-
-Project Structure
-index.html — Contains the semantic HTML structure with:
 
-Header with dark mode toggle
 
-Search bar for filtering parties
-
-Two-column layout (parties list + coalition summary)
-
-Accessibility features (aria-live regions, aria-labels)
-
-Responsive grid layout
-
-styles.css — Minimal but complete styling with:
-
-CSS variables for theming (light/dark mode)
-
-Flexbox and grid layouts
-
-Smooth transitions and hover effects
-
-Responsive design for mobile and desktop
-
-Custom scrollbars
-
-Dark mode support with localStorage persistence
-
-script.js — Core JavaScript logic featuring:
-
-Party data with realistic seat counts (based on 2025 expectations)
-
-Real-time coalition calculation
-
-Chart rendering with visual seat distribution
-
-Smart coalition suggestion algorithm (finds all valid 3-party combinations)
-
-Dark mode toggle with localStorage persistence
-
-Search/filter functionality
-
-Selection saving and reloading
-
-Export results feature with clipboard copy
 
 Key Features Implemented
 Core Functionality:
@@ -95,17 +53,7 @@ User Experience:
 
 ✅ Clear visual feedback on interactions
 
-How to Use
-Save all three files in the same folder
 
-Open index.html in your browser
-
-Select parties using checkboxes to form a coalition
-
-Watch the live calculation update
-
-Check suggestions for pre-calculated winning combinations
-
-Toggle dark mode and your preference will be saved
 
 Export results to share your coalition analysis
+
